@@ -1,39 +1,22 @@
 # [JSL08] Submission: Singleton Pattern for Bank Branch Management
 
-You will:
-1. Use the provided Starter Code Repository: https://github.com/CodeSpace-Academy/Module_8_StudentNo_Classcode_Group_Name-Surname_JSL08
-2. Code your solution.
-3. Commit changes to your GitHub repository.
-4. Submit the GitHub Repository Link to the LMS [JSL08] Submission Project Tab.
+Overview: https://www.youtube.com/watch?v=sJ-c3BA-Ypo
 
-This one will be a little tricky. So check out this overview first: https://www.youtube.com/watch?v=sJ-c3BA-Ypo
-
-Check out the practice challenges on Scrimba here: https://scrimba.com/playlist/pKJewwyu4
-
-A Singleton pattern ensures that a class has only one instance and provides a global point of access to it. For our banking system, let's use the Singleton pattern to manage the bank's branch information.
+Practice challenges on Scrimba here: https://scrimba.com/playlist/pKJewwyu4
 
 Design patterns like Singleton, Factory, and Observer can significantly improve the structure and maintainability of your JavaScript projects, making your code cleaner and more efficient. By understanding and applying these patterns, you'll be well-equipped to tackle complex design challenges in your projects, just as a well-organized bank efficiently manages its operations and services.
 
-## What You Need to Do:
+## Overview:
+A Singleton pattern ensures that a class has only one instance and provides a global point of access to it. For our banking system, we used the Singleton pattern to manage the bank's branch information. The core class `BankBranch` encapsulates branch information and provides methods for managing and accessing it.
 
-1. Clone the provided Starter Code Repository to your local development environment (e.g., VSCode): https://github.com/CodeSpace-Academy/Module_8_StudentNo_Classcode_Group_Name-Surname_JSL08
-2. Open the cloned project in your code editor.
-3. Code your solution for each of the challenges as per the provided instructions.
-4. Commit your changes to your local Git repository with meaningful commit messages.
-5. Push your local Git repository to your GitHub account.
-6. Verify that the changes have been successfully pushed to your GitHub repository.
+## Reflections & Code choices:
+Implementing a singleton pattern ensures that only one instance exists throughout the application lifecycle. This design choice simplifies managements and prevents duplication of data. By utilizing a class-based approach, the code maintains a clear structure and facilitates code organization.
 
-## What You Need to Include:
+- **Singleton Instance:** A variable named `bankBranchInstance` is used to store the singleton instance of the bank branch. This variable ensures that only one instance exists at any given time.
+- **BankBranch Class:** The `BankBranch` class is responsible for managing branch information. It includes a `constructor` to initialize branch data and methods for accessing and manipulating branch details.
+- **Constructor:** The `constructor` of the `BankBranch` class takes `branchInfo` as a parameter. It checks if the `bankBranchInstance` variable is null, indicating whether an instance exists or not. If no instance exists, a new instance is created with the provided branch information, and the bankBranchInstance variable is assigned to it.
+- **Methods:** The BankBranch class includes methods such as `getBranchInfo` to retrieve branch details. These methods facilitate interactions with branch data and ensure encapsulation of branch-specific functionalities.
+- **Usage:** In the usage section, instances of the `BankBranch` class (branchA and branchB) are created with different branch information. The `getBranchInfo` method is then used to retrieve branch details from these instances.
 
-1. Ensure that your code includes the necessary modifications to meet the challenge requirements.
-2. Your GitHub repository should contain the updated code files.
-
-## How We'll Assess Your Work:
-
-1. We will review your GitHub repository to ensure that it contains the updated code files.
-2. We will assess the modifications made to the code to verify that they effectively meet the challenge requirements.
-3. We will consider the commit history and meaningful commit messages to evaluate your coding process.
-
-This challenge will test your ability to create a function with the Singleton Pattern. Woohoo! Your first design pattern!
 
 
